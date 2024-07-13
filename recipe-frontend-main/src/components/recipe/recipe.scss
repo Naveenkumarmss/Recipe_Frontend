@@ -1,0 +1,200 @@
+.button-container {
+  display: flex;
+  gap: 4px;
+  button:nth-child(2) {
+    background-color: #f44336;
+    color: white;
+  }
+}
+
+.recipe-container {
+  // width: 100dvw;
+  min-height: 100dvh;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipe-form {
+  min-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 10px;
+  gap: 1rem;
+}
+
+.input-container {
+  &.step {
+    align-items: center;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    input {
+      flex: 1;
+    }
+    button {
+      border: none;
+      border-radius: 10px;
+      background-color: rgb(237, 237, 237);
+      padding: 0.5rem 1rem;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  input {
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #dadada;
+    max-width: 100%;
+    &:focus {
+      outline: none;
+      border: 1px solid darken(#dadada, 20%);
+    }
+  }
+}
+
+button,
+a {
+  text-decoration: none;
+  color: black;
+  max-width: 100%;
+  label {
+    cursor: pointer;
+  }
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(237, 237, 237);
+  padding: 0.5rem 1rem;
+}
+
+.upload {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.8rem;
+  min-height: 6rem;
+  border-radius: 5px;
+  border: #cacaca 1px solid;
+  padding: 2rem;
+  cursor: pointer;
+
+  button {
+    margin-bottom: 0.4rem;
+  }
+
+  &:hover {
+    background-color: #f7f7f7;
+  }
+
+  .uploaded-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    .uploadedimg {
+      object-fit: contain;
+      border: #cacaca 1px dashed;
+      border-radius: 5px;
+      height: 88px;
+      width: 88px;
+    }
+  }
+}
+
+.uploadedimg {
+  object-fit: contain;
+  border: #cacaca 1px dashed;
+  border-radius: 5px;
+  height: 140px;
+  width: 200px;
+}
+
+label {
+  font-size: 0.8rem;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+textarea {
+  background-color: #fff;
+  font-family: inherit;
+  resize: none;
+  padding: 10px 12px;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  max-width: 100%;
+  &:focus {
+    outline: none;
+    border: 1px solid darken(#dadada, 20%);
+  }
+}
+.back {
+  background-color: transparent !important;
+  text-decoration: none;
+  color: black;
+  max-width: min-content;
+  label {
+    cursor: pointer;
+  }
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+
+  padding: 0;
+}
+
+.nav-left {
+  display: flex;
+  gap: 4px;
+  span {
+    cursor: pointer;
+  }
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-color: #dadadaa8;
+  &-container {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  &-buttons {
+    padding-top: 1rem;
+    display: flex;
+    gap: 4px;
+    justify-content: flex-end;
+    button:nth-child(2) {
+      background-color: #f44336;
+      color: white;
+    }
+  }
+}
